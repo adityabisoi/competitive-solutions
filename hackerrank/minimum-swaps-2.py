@@ -4,7 +4,7 @@ def sort(x, arr):
     while(i<x):
         if arr[i]==i+1:
             i+=1
-            break
+            continue
         arr[arr[i]-1], arr[i] = arr[i], arr[arr[i]-1]
         c+=1
     return c
